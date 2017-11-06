@@ -1,17 +1,192 @@
 <!DOCTYPE html>
 
+
 <html>
-	<head>
+    <style src="style.css"> </style>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-	</head>
-
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400;300' rel='stylesheet' type='text/css'>
 	
-	<body>
-		<h1> HI I'm testing my website</h1>
+    <heading>
+        <title> Test My Website</title>
+        
+    </heading>
+    
+    
+    
+    
+    <body>
+		  <div class= "sidenav" id="mySidenav">		
+			  	<a href="javascript:void(0)" class= "closebtn" onclick="closeNav()">
+				<img id="closeIcon" src="close.png"></a>
+				<a href=myWebsite.html> Home </a>
+			  	<a href="Profile.html"> ProfileSpace </a>
+				<a href="#"> Projects </a>
+		 </div>
+		
+
+
+<img id= "hamburgerIcon" src="hamburgericon.jpg" onclick="openNav()";>
+		
+<!-- I dont know why I need this inorder to have my javascript functions to work -->
+        
+		  </div>
+       <img id="headingImg" class="img-responsive" src="http://wallup.net/wp-content/uploads/2015/12/244213-HDR-nature-landscape-clouds-cliff-hill-mountain-path-valley.jpg"> 
+            
+            
+            
+            <div class="content col-md-8"> 
+                <h2 class="heading"> Introduction</h2>
+                
+                <br>
+					<p> The purpose of this section of my website, is to provide viewers that I am capable of creating a responsive and interactive website. These are some of my more recent projects that I have been working on. I'm also created this section for good practice for AngularJS, Bootstrap, JavaScript, jQuery, HTML5, and CSS3. 
+				<br><br>
+						
+						<h2 style="text-align:center"> What is a responsive Website?</h2>
+				</br>
+               				<p> A responsive website is a website that can adjust itself accordingly to fit the user's screen resolution and to provider a better user experience. For an example, Phone users have a smaller screen and having a responsive design can be very beneficial.  The content, line of text, images, etc can fit on the screen without getting cut off if the website has responsive attributes.
+					
+				To test the responsiveness of my website, resize the internet browser. Notice how the image automatically resizes itself without getting cut off, it dosn't becoming disproportionate and it dosn't become pixelated. Same rule applies to my paragraphs and text. Thats because my code made the picture respond to the current side of your screen. You can explore the rest of my projects by clicking the menu bar at the top left corner.</p>
+				</br>
+			 <p> While you exlore the rest of my website, you might ask why my navigation bar, theme, design, layout, etc are innconsistent. I purposely designed it that way so that I could demonstrate viewers what i'm capible of. If I was to make everything the same, I wouldn't be showing much and I wouldn't be getting enough practice.</p>
+                <div class="secondImg">
+					<img  src="https://www.eduonix.com/aDmiN_050716/public/uploads/headerimages/20170301155447.jpg" alt="test test test">
+				</div>
+    
+  
+        </body>
+        
+    </body>
+    
+    <style>
+	html{
+		top:0;
+		
+		
+		}
+    body{
+		left: 0;
+	 	overflow-x: hidden;
+		position: relative;
+		top:0;
+		margin-bottom:100px;
+		
+
+		}
+    #headingImg{
+        width:100%;
+        height:auto;
+		max-height:600px;
+		top:0;
+        left:0;
+		z-index:2;
+		margin-bottom:20px;
+        }
+	.sidenav{
+		height: 100%;
+		width: 0;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		background-color: #111;
+		overflow-x: hidden;
+		transition: 0.5s;
+		padding-top: 60px;
+		}
+    .sidenav a{
+       padding: 8px 8px 8px 32px;
+        text-decoration: none;
+		font-size: 25px;
+		color:#818181;
+		display: block;
+		transition: 0.3s;
+         
+        }
+      .sidenav . closebtn{
+		 positon:absolute;
+		  top:0;
+		  right: 25px;
+		  font-size: 36px;
+		  margin-left:50px;
+		  
+		}
+        .content {
+			font-size:18px;   
+			font-family:"awesome";
+			background-color:gainsboro;
+			float: none;
+			margin-left: auto;
+			margin-right: auto;
+			padding-bottom:50px;
+			margin-top:10px;
 	
-	</body>
+			
+        }
+        .heading{
+  	   	text-align:center;
+		padding-top:25px;
+        }
+			
+        .col-md-8{
+      	   width:60%;   
+			
+        }
+        .secondImg img{
+			width:100%;
+			margin-top:10px;
+			margin-bottom:50px;
+            
+        }
+		
+		
+		#hamburgerIcon{
+		z-index: 100;
+		position:absolute;
+		height:75px;
+		width:75px;
+		top:0;
+		left:0;
+			
+			
+		}
+		#closeIcon{
+			width:95px;
+			height:95px;
+			top:0;
+			left:-20px;
+		}
+		.content p{
+		text-indent:30px;	
+		padding-left:15px;
+		padding-right:15px;
+		}
+		.col-md-2{
+		width:20%;	
+			
+		}
+		
+    </style>
+    <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.querySelector(".content").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
 
-
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.querySelector(".content").style.marginLeft= "auto";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src= "myJavaScript.js"></script>
 </html>
-
