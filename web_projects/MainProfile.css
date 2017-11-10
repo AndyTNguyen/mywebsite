@@ -1,0 +1,219 @@
+	html{
+		padding-left:20px;
+		padding-right:20px;
+}
+		body{
+			overflow-x: hidden;
+			position: relative;
+			margin-bottom:10%;
+			background-color:white;
+			margin-left:5%;
+			margin-right:5%;
+		}
+
+	
+		.navbar{
+		margin-bottom:0px;	
+		}
+
+        .content {
+			font-size:18px;   
+			font-family:"awesome";
+			background-color:gainsboro;
+        }
+        .heading{
+  	   	text-align:center;
+        }
+			
+        .userPost{   
+			text-align:center;
+			margin-left:auto;
+			margin-right:auto;
+			margin-top:10px;
+			margin:15px;
+            display:inline-block;
+            background-color:gainsboro;
+        }
+		
+			
+		.icon{
+			margin-bottom:20px;		
+			display:inline-block;
+		}
+		.status-box{
+			height:100px;
+			width:100%;
+			background-color:white;
+		}
+		
+		.counter{
+			display:inline;	
+			
+		}
+		form{
+			width:80%;
+			clear:both;
+			word-break: break-all;
+			background-color:white;
+			border: 1px solid black;
+			margin-left:auto;
+			margin-right:auto;
+			
+		}
+		
+		
+	/* post section which activates when the user clicks the submit button*/
+		.post {
+		  clear: both;
+		  list-style: none;
+		  margin-right:auto;
+		  margin-left:auto;
+		  width:80%;
+		  padding-left:0;
+		}
+		
+		.post li {
+		  background-color: white;
+		  border: 1px solid #d8d8d8;
+		  padding-top: 10px;
+		  padding-left: 10px;
+		  padding-right: 10px;
+		  padding-bottom: 10px;
+		  margin-bottom: 10px;
+		  word-wrap: break-word;
+		  min-height: 60px;
+		  margin-right:auto;
+		  margin-left:auto;
+		  text-align:left;
+		
+		}
+		#miniProfilePic{
+			height:75px;
+			width:60px;	
+
+		}
+		.userPost{
+			text-align:left;
+			display:inline;	
+			max-width:75%;
+			background-color:gainsboro;
+			
+		}
+		.buttonGroup{
+		margin-top:5px;	
+		margin-right:10%;	
+			
+		}
+		.characterCounter{	
+		font-size:20px;	
+		
+		}
+/* this section belongs to the user info and profile */	
+		.profileInfo{
+			background-color:gainsboro;
+			text-align:center;
+			max-width:500px;
+			max-height:auto;
+			margin-left:auto;
+			marign-right:auto;
+			padding-top:1%;
+			margin-top:10px;
+			margin-bttom:25px;
+
+		}
+		.profileInfo .profilePic{
+			width:100%;
+			height:100%;
+			max-height:500px;
+			max-width:350px;
+			margin-left:auto;
+			margin-right:auto;
+			
+	
+		}		
+		
+		.editBtn{
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:10px;
+		margin-top:5px;	
+		padding-right:15px;
+		}
+		
+		.saveBtn{
+		display:block;
+		margin-right:auto;
+		margin-left:auto;
+		margin-bottom:10px;
+		margin-top:5px;
+		}
+		.profileNameInput{
+		width:50%;	
+		}
+		.profileAgeInput{
+		width:50%;	
+		}
+		#timePost{
+			float:top;
+			float:right;
+		}
+
+/* Friends list section */
+		.friendsList{
+		background-color:gainsboro;
+		margin-top:15px;
+		margin-left:30px;
+		display:block;
+		position:relative;
+		margin:15px;
+		text-align: center;	
+		
+		}
+		.FriendSearchBar{
+		margin-left:auto;
+		margin-right:auto;
+		text-align:center;
+		width:60%;		
+		}
+		.friends{
+		margin-top:15px;
+		margin-bottom:2.5px;
+        display:inline-block;
+        overflow-x:hidden;
+        width:100%;
+        text-align:center;
+
+            
+		}
+		.friendProfilePic{
+		height:25%; 
+		}
+		.friendObject{
+        margin-top:15px;
+		margin-right: 15px;
+		margin-left:15px;
+        width:20%;
+		display:inline-block;
+        text-align:center;
+		
+		}
+        .test{
+            text-align:left; 
+            margin:0;
+            width:75%;
+            background-color:white;
+            margin:auto;
+            display:table;
+
+        }
+		.friends .friendObject .friendName, #friendProfilePic{
+			text-align:center;
+        
+
+			
+		}
+		.friends #friendProfilePic{
+		Height:100px;
+		width:auto;
+		}	

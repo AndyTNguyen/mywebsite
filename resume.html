@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/> 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="MasterCss.css"
+<html>
+<head>
+    
+
+    <div> 
+        <h1 id= "page-title">Andy Nguyen</h1>        
+    </div>
+    <ul id="navigation">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Charts.html">Workflow Diagrams</a></li>
+        <li><a href="Projects.html"> Projects</a></li>
+        <li><a href="resume.html"> Resume</a></li>
+        <li><a href="Contact.html">Contact Info </a></li>
+				<li><a href="web_projects/myWebsite.html">web development</a></li>
+    </ul>
+</head>
+
+
+
+<body>
+    <div class="box">
+        
+        <h1 style="text-align:center"> Resume </h1>
+        <br>
+        <div class="col-xs-4">
+            <img class ="thumbnail uxui_btn" src="uxui.jpg">
+            <h3> UX/UI</h3>
+            <p> This resume focuses more on project design where I worked with wireframes and prototypes. Some of my project highlights user centered design targeting specific user groups.</p>
+        </div>
+        <div class="col-xs-4 developer">
+              <img class= "thumbnail developer_btn" src="developer_thumbnail.jpg">
+              <h3> Front-End programmer </h3>
+              <p> The projects in this resume focuses more on my programming skills especially in HTMl,CSS,and JavaScript and my ability to develop websites and prototypes.</p>
+    
+        </div>
+        <div class="col-xs-4 IT">
+            <img class="thumbnail general_btn " src="GeneralIT_thumbnail.jpg">
+            <h3>General IT</h3>
+            <p> This resume is less specfic on a job specification but covers a braoder experience of my IT work, diagrams, SQL, problem solving, programming ,etc.</p>
+        </div>
+    
+</div>
+
+       <div class="uxui_resume popBox"> 
+        <div class="center" id="resume">
+            <p> <a href="Nguyen_Andy_Resume_UXUI.pdf"></a></p>
+            <embed id="pdf-resume" src="Nguyen_Andy_Resume_UXUI.pdf"> </embed> </div>
+        </div> 
+    
+       <div class="programmer_resume popBox"> 
+        <div class="center" id="resume">
+            <p> <a href="Nguyen_Andy_Resume_Programmer.pdf"></a></p>
+            <embed id="pdf-resume" src="Nguyen_Andy_Resume_Programmer.pdf"> </embed> </div>
+        </div> 
+
+       <div class="general_resume popBox"> 
+           <div class="center" id="resume">
+                <p> <a href="NguyenAndyResume5_15_17.pdf"></a></p>
+                <embed id="pdf-resume" src="NguyenAndyResume5_15_17.pdf"> </embed> 
+            </div>
+        </div> 
+
+<!-- JavaScript-->
+    <script> 
+        
+     $(document).ready(function(){
+        $('.uxui_btn').click(function(){
+                $('.uxui_resume.popBox').css('display','block');   
+                $('.programmer_resume.popBox').css('display','none');
+                $('.general_resume.popBox').css('display','none');
+            });
+
+            $('.developer_btn').click(function(){
+                $('.programmer_resume.popBox').css('display','block');
+                $('.uxui_resume.popBox').css('display','none');
+                $('.general_resume.popBox').css('display','none');
+            });
+
+            $('.general_btn').click(function(){
+                $('.general_resume.popBox').css('display','block');
+                $('.uxui_resume.popBox').css('display','none');
+                $('.programmer_resume.popBox').css('display','none');
+            });
+        });
+    
+        
+    </script>
+<!-- end of script --> 
+
+</body>
+    
+    <style>
+        #resume embed{
+           display:block;
+            width:100%;
+            height:1200px;
+         }
+        
+        .thumbnail{
+            height 150px;
+            width:150px;
+            border-radius:50%;
+            margin:0 auto;
+            cursor:pointer;
+        }
+        
+        .col-xs-4 {
+            text-align:center;
+            margin-bottom:25px;
+            padding:30px;
+        }
+        
+        .popBox{
+            margin:auto;
+            width:1000px;
+            height:100%;
+            display:none;
+            margin- top:-25px;
+            margin-bottom: 50px;   
+        }
+        
+        
+</style>
+    
+
+
+</html>

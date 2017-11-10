@@ -1,0 +1,53 @@
+/* creating the white padding box and the background */
+.box{
+max-width:1000px;
+background-color:white;
+margin:auto;
+border-style: solid;
+border-color:black;
+border-width:5px;
+overflow:hidden;
+margin-bottom:50px;
+    font-size:14px;
+    }
+body{
+    background-image:URL("dark-blue-hd-wallpaper.jpg");
+    background-attachment:fixed;
+    max-width:100%;
+    overflow-x:hidden;
+    font-family:awesome; 
+    }
+        
+/* creating the title and navigation bar */
+#title{
+text-align:LEFT;
+color:rgb(0, 0, 102);
+        }
+    
+#navigation{
+    list-style-type: none;     
+    width:1000px;
+    margin:auto;
+    overflow: hidden;
+    background-color: darkblue;
+    margin-bottom:30px;
+    }
+
+li {
+    float:left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+}
+
+#page-title{
+    color:white;
+    text-align:center;
+    font-family:trajan;
+    font-size:500%;
+        }        
